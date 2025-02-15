@@ -11,3 +11,5 @@ tests_output
 *.log
 *~
 \#*#
+azcopy.exe
+.env*

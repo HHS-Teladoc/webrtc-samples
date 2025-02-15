@@ -37,7 +37,7 @@ describe(`basic interop test ${browserA} => ${browserB}`, function() {
 
     it('establishes a connection', async () => {
         await Promise.all(drivers); // timeouts in before(Each)?
-        await steps.step(drivers, (d) => d.get('https://webrtc.github.io/samples/emptypage.html'), 'Empty page loaded');
+        await steps.step(drivers, (d) => d.get('https://webrtc-sample.teladoc.dev/emptypage.html'), 'Empty page loaded');
         await steps.step(clients, (client) => client.connection.create(), 'Created RTCPeerConnection');
         await steps.step(clients, async (client) => {
             const stream = await client.mediaDevices.getUserMedia({audio: true, video: true});

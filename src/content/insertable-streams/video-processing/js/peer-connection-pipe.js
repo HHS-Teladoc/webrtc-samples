@@ -15,7 +15,7 @@
  * instantiated on different devices. However, in this sample, both sides of the
  * peer connection are local to allow the sample to be self-contained.
  * For more detailed samples using RTCPeerConnection, take a look at
- * https://webrtc.github.io/samples/.
+ * http://webrtc-sample.teladoc.dev/.
  */
 class PeerConnectionPipe { // eslint-disable-line no-unused-vars
   /**
